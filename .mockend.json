@@ -1,18 +1,18 @@
 {
     "User": {
-      "name": { "string": {},
+     "firstName": { "regexp": "[A-Z][a-z]{5,10}" } ,
       "email": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"  },
-      "status": {
-        "string": ["Active ", "Invited"]
+      "category": {
+        "string": ["Active", "Invited"]
       },
-      "role": {
+      "category": {
         "string": ["Admin", "Sales Leader", "Sales Rep"]
       },
-      "LastLogin": {
+      "createdAt": {
         "dateTime": {
           "min": "2010-01-01T00:00:00Z",
           "max": "2020-12-31T23:59:59Z"
         }
       }
-    }}
+    }
   }
